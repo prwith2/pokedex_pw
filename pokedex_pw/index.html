@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon-API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="pokedeximg">
+    <img src="https://user-images.githubusercontent.com/29473781/180619084-a56960ab-7efa-4e34-9d33-4e3e581d62ff.png" width="300px">
+    </div>
+        <div id="content">
+            <div id="pokemonListContainer">
+            <button class = "show" onclick="showPokemonByIdPrompt()"><img src="img/id.png" width="240px" ></button>
+            <ul id="ListaPokemons" class="pokemon-list"></ul>
+            </div>
+            <div id="bottomContainer">
+                <div id="pokemoncImg" class="pokemon-Img">
+                    <h2><img src="img/0086e940f03cb49231180d98dfe96bbc.png" width="300px"></h2>
+                </div>
+                <div id="pokemonDetails" class="pokemon-details"></div>
+                <div id="capturedList" class="captured-list">
+                    <ul id="capturedPokemonList" class="captured-pokemon-list"></ul>
+                
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="pokemonModal" class="modal">
+            <div class="modal-content">
+            
+    <div id="modalContent">
+        <h2 id="pokemonName"></h2>
+        <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+        <div id="pokemonType"></div>
+        <button id="addToTeamButton">Capturar pokemon</button>
+    </div>
+
+                <button class="close" onclick="closeModal()">&times;</button>
+                <div id="modalContent"></div>
+            </div>
+        </div>
+</body>
+</html>
